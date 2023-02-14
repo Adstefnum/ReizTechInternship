@@ -12,7 +12,7 @@ namespace ClockAngle
 
         }
 
-       public double CalculateSmallerClockAngle()
+       public double CalculateSmallestAngleConnectingShortAndLongClockHands()
         {
             double hourAngle = 0.5 * (60 * hours + minutes);
             double minuteAngle = 6 * minutes;

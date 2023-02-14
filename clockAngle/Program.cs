@@ -10,7 +10,7 @@ namespace ClockAngle
         {
             ReceiveHoursAndMinutesFromUser();
             ClockAngleCalculator clockAngleCalculator = new ClockAngleCalculator(hours, minutes);
-            double angle = clockAngleCalculator.CalculateSmallerClockAngle();
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands();
             PrintClockAngle(angle);
         }
 
