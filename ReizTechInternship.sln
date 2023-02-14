@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryTree", "BinaryTree\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockAngleCalculatorTests", "ClockAngleCalculatorTests\ClockAngleCalculatorTests.csproj", "{12C1F8CC-2893-4E24-88C0-4C2437A40373}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F77D563-50AD-4697-8177-F408DB9B852A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\tests.yml = .github\workflows\tests.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
