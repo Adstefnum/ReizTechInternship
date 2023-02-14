@@ -3,17 +3,58 @@
 namespace ClockAngleCalculatorTests
 {
     [TestClass]
-    public class ClockAngleCalculatorMainProgramTests
-    {
+    public class ClockAngleCalculatorMainProgramTests { 
+        int expectedMinutesMinValue;
+        int expectedMinutesMaxValue;
+        int expectedHoursMinValue;
+        int expectedHoursMaxValue;
+        private ClockAngleCalculatorMainProgram clockAngleCalculatorMainProgram;
 
-        public void NumberOfHoursReceivedShouldBeLessThanTwelve() { }
+        [TestInitialize]
+        public void Setup()
+        {
+            clockAngleCalculatorMainProgram= new ClockAngleCalculatorMainProgram();
+            expectedMinutesMinValue = 0;
+            expectedMinutesMaxValue = 59;
+            expectedHoursMinValue = 1;
+            expectedHoursMaxValue = 12;
+        }
 
-        public void NumberOfMinutesReceivedShouldBeLessThanSixty() { }
+        
 
-        public void ShouldTakeInIntegerValueForHoursValue() { }
+            [TestMethod]
+            public void NumberOfHoursReceivedShouldBeBetweenOneAndTwelve()
+            {
+                int actualValue = clockAngleCalculatorMainProgram.ReadClockHandsInputFromUser("Enter the hours (1-12): ", expectedHoursMinValue, expectedHoursMaxValue);
 
-        public void ShouldTakeInIntegerValueForMinutesValue() { }
+                Assert.IsTrue(actualValue >= expectedHoursMinValue && actualValue <= expectedHoursMaxValue);
+            }
+
+            [TestMethod]
+            public void NumberOfMinutesReceivedShouldBeBetweenZeroAndFiftyNine()
+            {
+                int actualValue = clockAngleCalculatorMainProgram.ReadClockHandsInputFromUser("Enter the minutes (0-59): ", expectedMinutesMinValue, expectedMinutesMaxValue);
+
+                Assert.IsTrue(actualValue >= expectedMinutesMinValue && actualValue <= expectedMinutesMaxValue);
+            }
+
+            [TestMethod]
+            public void ShouldTakeInOnlyIntegerValueForHoursValue()
+            {
+                var actualValue = clockAngleCalculatorMainProgram.ReadClockHandsInputFromUser("Enter the hours (1-12): ", expectedHoursMinValue, expectedHoursMaxValue);
+                
+                Assert.IsInstanceOfType(actualValue, typeof(int));
+            }
+
+            [TestMethod]
+            public void ShouldTakeInOnlyIntegerValueForMinutesValue()
+            {
+                var actualValue = clockAngleCalculatorMainProgram.ReadClockHandsInputFromUser("Enter the minutes (0-59): ", expectedMinutesMinValue, expectedMinutesMaxValue);
+     
+                Assert.IsInstanceOfType(actualValue, typeof(int));
+            }
+
+         
+        }
+
     }
-
-
-}
