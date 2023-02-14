@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClockAngle
+namespace ClockAngleCalculatorNS
 {
     class Program
        
@@ -9,8 +9,8 @@ namespace ClockAngle
         static void Main(string[] args)
         {
             ReceiveHoursAndMinutesFromUser();
-            ClockAngleCalculator clockAngleCalculator = new ClockAngleCalculator(hours, minutes);
-            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands();
+            ClockAngleCalculator clockAngleCalculator = new ClockAngleCalculator();
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(hours, minutes);
             PrintClockAngle(angle);
         }
 
