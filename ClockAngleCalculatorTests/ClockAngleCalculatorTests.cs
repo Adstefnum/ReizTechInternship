@@ -21,7 +21,7 @@ namespace ClockAngleCalculatorTestsNS
         [DataRow(5, 45, 97.5)]
         [DataRow(6, 0, 180)]
         [DataRow(9, 15, 172.5)]
-        [DataRow(10, 10, 27.5)]
+        [DataRow(10, 10, 115)]
         [DataRow(11, 55, 27.5)]
         [DataRow(12, 0, 0)]
         [DataRow(3, 20, 20)]
