@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClockAngleCalculator\ClockAngleCalculator.csproj" />
-    <ProjectReference Include="..\clockAngle\ClockAngleCalculator.csproj" />
   </ItemGroup>
 
 </Project>
