@@ -11,6 +11,7 @@ namespace ClockAngleCalculatorNS
 
         }
 
+        //O(1) space and time
        public double CalculateSmallestAngleConnectingShortAndLongClockHands(int hours, int minutes)
         {
             double hourAngle = 0.5 * (60 * hours + minutes);
