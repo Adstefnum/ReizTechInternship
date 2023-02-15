@@ -2,18 +2,18 @@
 
 namespace ClockAngleCalculatorNS
 {
-    public class ClockAngleCalculatorMainProgram
+    public class Program
        
     {
         private int hours, minutes;
         static void Main(string[] args)
         {
-            ClockAngleCalculatorMainProgram clockAngleCalculatorMainProgram = new ClockAngleCalculatorMainProgram();
-            clockAngleCalculatorMainProgram.hours = clockAngleCalculatorMainProgram.ReadClockHandsInputFromUser("Enter the hours (1-12): ",1,12);
-            clockAngleCalculatorMainProgram.minutes = clockAngleCalculatorMainProgram.ReadClockHandsInputFromUser("Enter the minutes (0-59): ",0,59);
+            Program program = new Program();
+            program.hours = program.ReadClockHandsInputFromUser("Enter the hours (1-12): ",1,12);
+            program.minutes = program.ReadClockHandsInputFromUser("Enter the minutes (0-59): ",0,59);
 
             ClockAngleCalculator clockAngleCalculator = new ClockAngleCalculator();
-            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(clockAngleCalculatorMainProgram.hours, clockAngleCalculatorMainProgram.minutes);
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(program.hours, program.minutes);
             PrintClockAngle(angle);
         }
 
