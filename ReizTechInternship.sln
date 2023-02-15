@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HierarchialStructure", "HierarchialStructure\HierarchialStructure.csproj", "{BAC8CEA2-1393-4644-81A5-5716E5E72E3A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryTree", "BinaryTree\BinaryTree.csproj", "{31089C91-70B9-4CAF-B9D6-A4F51C53F419}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClockAngleCalculatorTests", "ClockAngleCalculatorTests\ClockAngleCalculatorTests.csproj", "{12C1F8CC-2893-4E24-88C0-4C2437A40373}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F77D563-50AD-4697-8177-F408DB9B852A}"
@@ -26,10 +24,6 @@ Global
 		{BAC8CEA2-1393-4644-81A5-5716E5E72E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC8CEA2-1393-4644-81A5-5716E5E72E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC8CEA2-1393-4644-81A5-5716E5E72E3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31089C91-70B9-4CAF-B9D6-A4F51C53F419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31089C91-70B9-4CAF-B9D6-A4F51C53F419}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31089C91-70B9-4CAF-B9D6-A4F51C53F419}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31089C91-70B9-4CAF-B9D6-A4F51C53F419}.Release|Any CPU.Build.0 = Release|Any CPU
 		{12C1F8CC-2893-4E24-88C0-4C2437A40373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{12C1F8CC-2893-4E24-88C0-4C2437A40373}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C1F8CC-2893-4E24-88C0-4C2437A40373}.Release|Any CPU.ActiveCfg = Release|Any CPU
