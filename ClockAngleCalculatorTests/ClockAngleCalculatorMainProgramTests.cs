@@ -1,6 +1,6 @@
 ﻿using ClockAngleCalculatorNS;
 
-namespace ClockAngleCalculatorTests
+namespace ClockAngleCalculatorTestsNS
 {
     [TestClass]
     public class ClockAngleCalculatorMainProgramTests { 
@@ -8,12 +8,12 @@ namespace ClockAngleCalculatorTests
         int expectedMinutesMaxValue;
         int expectedHoursMinValue;
         int expectedHoursMaxValue;
-        private ClockAngleCalculatorMainProgram clockAngleCalculatorMainProgram;
+        private Program clockAngleCalculatorMainProgram;
 
         [TestInitialize]
         public void Setup()
         {
-            clockAngleCalculatorMainProgram= new ClockAngleCalculatorMainProgram();
+            clockAngleCalculatorMainProgram= new Program();
             expectedMinutesMinValue = 0;
             expectedMinutesMaxValue = 59;
             expectedHoursMinValue = 1;
