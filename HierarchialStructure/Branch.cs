@@ -9,6 +9,8 @@ namespace HierarchialStructureNS
       
         public void AddBranch(int noOfBranchesToAdd)
         {
+            if (noOfBranchesToAdd < 1) Console.WriteLine("Number of branches must be greater than zero");
+
             if (this.branches == null)
             {
                 this.branches = new List<Branch>();
