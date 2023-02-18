@@ -24,7 +24,7 @@ namespace HierarchialStructureNS
    
         }
        
-
+        //O(n) space and time
         public int DetermineDepth() 
         {
 
