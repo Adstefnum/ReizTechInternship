@@ -5,14 +5,10 @@ namespace ClockAngleCalculatorNS
     public class ClockAngleCalculator
     {
      
-        public ClockAngleCalculator()
-        {
-           
-
-        }
+      
 
         //O(1) space and time
-       public double CalculateSmallestAngleConnectingShortAndLongClockHands(int hours, int minutes)
+       public double CalculateSmallestAngleConnectingClockHands(int hours, int minutes)
         {
             double hourAngle = 0.5 * (60 * hours + minutes);
             double minuteAngle = 6 * minutes;

@@ -29,7 +29,7 @@ namespace ClockAngleCalculatorTestsNS
         [TestMethod]
         public void ShouldTakeInValueAndReturnValue(int hours, int minutes, double expectedAngle)
         {
-            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(hours, minutes);
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingClockHands(hours, minutes);
 
             Assert.AreEqual(expectedAngle, angle);
         }
@@ -48,7 +48,7 @@ namespace ClockAngleCalculatorTestsNS
         public void ShouldFindSmallestAngleNotBiggest(int hours, int minutes, double expectedBiggestAngle)
         {
 
-            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(hours, minutes);
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingClockHands(hours, minutes);
 
 
             Assert.AreNotEqual(expectedBiggestAngle, angle);
@@ -59,7 +59,7 @@ namespace ClockAngleCalculatorTestsNS
         [TestMethod]
         public void ShouldReturnTheSameAngleForBiggestAndSmallestForTwelveAndSixOClock(int hours, int minutes, double biggestAngle) {
 
-            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(hours, minutes);
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingClockHands(hours, minutes);
             Assert.AreEqual(biggestAngle, angle);
         }
 
@@ -69,7 +69,7 @@ namespace ClockAngleCalculatorTestsNS
             int hours = 12;
             int minutes = 12;
 
-            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingShortAndLongClockHands(hours, minutes);
+            double angle = clockAngleCalculator.CalculateSmallestAngleConnectingClockHands(hours, minutes);
 
             Assert.IsInstanceOfType(angle, typeof(double));
         }
