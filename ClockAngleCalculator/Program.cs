@@ -21,6 +21,5 @@ namespace ClockAngleCalculatorNS
             Console.WriteLine("The angle between the long hand and short hand is: " + angle);
         }
 
-
     }
 }

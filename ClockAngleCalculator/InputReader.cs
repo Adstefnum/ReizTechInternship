@@ -30,9 +30,6 @@ namespace ClockAngleCalculatorNS
             } while (true);
 
             return value;
-        }
-
-
-       
+        } 
     }
 }

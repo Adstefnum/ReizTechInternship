@@ -11,7 +11,6 @@ namespace ClockAngleCalculatorNS
             double minuteAngle = 6 * minutes;
             double angle = Math.Abs(hourAngle - minuteAngle);
             return Math.Min(360 - angle, angle);
-           
         }
     }
 }
