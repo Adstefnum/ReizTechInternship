@@ -21,13 +21,11 @@ namespace HierarchialStructureNS
                 Branch newBranch = new Branch();
                 this.branches.Add(newBranch);
             }
-   
         }
        
         //O(n) space and time
         public int DetermineDepth() 
         {
-
             int maxDepth = 0;
             if(this == null) return 0;
 
@@ -41,6 +39,5 @@ namespace HierarchialStructureNS
 
             return maxDepth;
         }
-
     }
 }

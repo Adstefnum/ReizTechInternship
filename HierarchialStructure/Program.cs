@@ -15,9 +15,7 @@ namespace HierarchialStructureNS
 
             root.branches[1].branches[1].branches[0].AddBranch(1);
 
-
             Console.Write("The depth of the structure is " + root.DetermineDepth());
-
         }
 
         
